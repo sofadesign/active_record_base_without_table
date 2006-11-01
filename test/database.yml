@@ -1,0 +1,6 @@
+mysql:
+  :adapter: mysql
+  :host: localhost
+  :username: rails
+  :password: 
+  :database: active_record_base_without_table_plugin_test
