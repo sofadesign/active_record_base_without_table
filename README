@@ -20,4 +20,8 @@ Get the power of ActiveRecord models, including validation, without having a tab
   
 This model can be used just like a regular model based on a table, except it will never be saved to the database.
 
+There is a good blog post available on the plugin:
+
+  http://www.kangarooit.com/developer_blog/2007/02/email-form-validation-in-ruby-on-rails.php
+
 Any bugs, questions, comments please feel free to email me: jonathan.viney@gmail.com
