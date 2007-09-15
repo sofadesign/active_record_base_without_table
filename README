@@ -8,6 +8,8 @@ If you find this plugin useful, please consider a donation to show your support!
   
 == Instructions
 
+* For edge Rails r7315 or above use http://svn.viney.net.nz/things/branches/active_record_base_without_table
+
 Get the power of ActiveRecord models, including validation, without having a table in the database.
 
   class Contact < ActiveRecord::BaseWithoutTable
