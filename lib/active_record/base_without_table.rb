@@ -18,7 +18,7 @@ module ActiveRecord
       
       # Do not reset @columns
       def reset_column_information
-        read_methods.each { |name| undef_method(name) }
+        generated_methods.each { |name| undef_method(name) }
         @column_names = @columns_hash = @content_columns = @dynamic_methods_hash = @read_methods = nil
       end
     end
