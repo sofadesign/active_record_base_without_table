@@ -30,7 +30,6 @@ This model can be used just like a regular model based on a table, except it wil
 
 There are good blog posts available on the plugin:
 
-  * http://blog.adsdevshop.com/2008/04/02/custom-form-validations-without-activerecord/
   *  http://www.kangarooit.com/developer_blog/2007/02/email-form-validation-in-ruby-on-rails.php
 
 Any bugs, questions, comments please feel free to email me: jonathan.viney@gmail.com
