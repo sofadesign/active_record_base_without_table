@@ -1,4 +1,4 @@
-VERSION = '0.1'
+VERSION = '0.1.1'
 
 Gem::Specification.new do |s|
   s.name = "active_record_base_without_table"
