@@ -2,7 +2,7 @@ module ActiveRecord
   class BaseWithoutTable < Base
     self.abstract_class = true
     
-    def create_or_update
+    def create_or_update_without_callbacks
       errors.empty?
     end
     
@@ -16,10 +16,11 @@ module ActiveRecord
         reset_column_information
       end
       
-      # Do not reset @columns
+      # Reset everything, except the column information
       def reset_column_information
-        generated_methods.each { |name| undef_method(name) }
-        @column_names = @columns_hash = @content_columns = @dynamic_methods_hash = @read_methods = nil
+	columns = @columns
+	super
+	@columns = columns
       end
     end
   end
