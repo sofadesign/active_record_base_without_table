@@ -3,7 +3,7 @@ module ActiveRecord
     self.abstract_class = true
     
     def create_or_update_without_callbacks
-      self.new_record? ? create_without_callbacks : update_without_callbacks
+      self.new_record? ? create : update
     end
     def create_without_callbacks
       @new_record = false if answer = errors.empty?
